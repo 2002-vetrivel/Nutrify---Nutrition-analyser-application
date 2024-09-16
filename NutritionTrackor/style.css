@@ -1,0 +1,165 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    background-color: FFFFFF;
+}
+#Navigation 
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#button
+{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    padding: 3px;
+    background-color: #DCE3EB;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#button h3 
+{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 3px;
+    font-style: normal;
+    margin-right: 8px;
+}
+#button img 
+{
+    width: 25px;
+}
+
+#Navigation h3
+{    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+#inner 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+#container 
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+#input 
+{
+    margin-left: 10px;
+    background-color: #f2f5fc;
+    padding: 17px;
+    width: 680px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+#input::placeholder
+{
+    font-size: 15px;
+    color: #7b7b7b;
+}
+#search
+{
+    width: 30px;
+    margin: 10px;
+    padding: 7px;
+    border: 0.5px solid grey;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#div {
+    position: relative;
+}
+
+#bottom-text {
+    position: absolute;
+    bottom: 0;  
+    width: 100%; 
+    text-align: center; 
+    font-size: 16px;
+    padding: 10px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 20px;
+    max-width: 70%; 
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+#result div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    min-height: 80px;
+}
+@media (max-width: 768px) {
+    #result { 
+        gap: 10px;
+        max-width: 85%; 
+    }
+    #result div 
+    {
+        font-size: 13px;
+        min-height: 5px;
+    }
+}
+#issue 
+{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+}
+#popup {
+    position: absolute;
+    top: 80px; 
+    right: 20px; 
+    padding: 15px;
+    background-color: #DCE3EB;
+    text-align:justify;
+    border-radius: 15px;
+    display: none; 
+    z-index: 1000;
+}
+#popup p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
